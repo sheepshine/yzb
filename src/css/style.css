@@ -1,0 +1,176 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  background-size: 100% 100%;
+}
+.header {
+  height: 1.2rem;
+  width: 100%;
+  background: #6ab721;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.header .location-ico {
+  width: 0.426667rem;
+  height: 0.426667rem;
+  background: url("../images/location.png");
+  background-size: 100% 100%;
+  margin: 0.373333rem 0 0 0.266667rem;
+  display: inline-block;
+  vertical-align: bottom;
+}
+.header .location-name {
+  font-size: 0.346667rem;
+  color: #fff;
+  vertical-align: bottom;
+}
+.header .search {
+  font-size: 0.346667rem;
+  width: 5.333333rem;
+  height: 0.8rem;
+  background: #fff;
+  border-radius: 10px;
+  position: absolute;
+  top: 0.186667rem;
+  left: 50%;
+  margin-left: -2.666667rem;
+  padding: 0.213333rem 0.666667rem 0.213333rem 1.386667rem;
+  box-sizing: border-box;
+}
+.header .search-ico {
+  width: 0.4rem;
+  height: 0.4rem;
+  background: url("../images/search-ico.png");
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0.373333rem;
+  left: 3.146667rem;
+}
+.header .add {
+  width: 0.48rem;
+  height: 0.48rem;
+  background: url("../images/top-add.png");
+  background-size: 100% 100%;
+  border: none;
+  position: absolute;
+  top: 0.346667rem;
+  right: 0.266667rem;
+}
+.container {
+  margin-top: 1.2rem;
+  background: #ECEDF1;
+  padding: 0.266667rem 0.266667rem;
+  box-sizing: border-box;
+}
+.container .section {
+  width: 100%;
+  background: #fff;
+  padding-top: 0.346667rem;
+  box-sizing: border-box;
+  padding-bottom: 0.32rem;
+  border-radius: 10px;
+  margin-bottom: 0.266667rem;
+}
+.container .section:last-child {
+  margin-bottom: 1.306667rem;
+}
+.container .section h1 {
+  font-size: 0.426667rem;
+  margin-left: 0.346667rem;
+}
+.container .section .activity-img {
+  margin: 0.32rem 0 0.32rem;
+  width: 100%;
+  height: 4.0rem;
+}
+.container .section .ftil {
+  font-size: 0.346667rem;
+  padding-left: 0.393333rem;
+  margin: 0 0.266667rem 0;
+}
+.container .section .ftil.time {
+  background: url("../images/ico-time.png") no-repeat;
+  background-size: 0.306667rem 0.306667rem;
+  vertical-align: bottom;
+  margin-bottom: 0.24rem;
+}
+.container .section .ftil.place {
+  background: url("../images/ico-address.png") no-repeat;
+  background-size: 0.226667rem 0.373333rem;
+  vertical-align: bottom;
+}
+.container .section .ftil .data,
+.container .section .ftil .place {
+  line-height: 0.306667rem;
+  vertical-align: top;
+}
+.container .section .ftil .hour {
+  line-height: 0.306667rem;
+  vertical-align: top;
+}
+.container .section .ftil .ftil-right {
+  float: right;
+  line-height: 0.306667rem;
+}
+.container .section .ftil .ftil-right b {
+  color: #6AB721;
+}
+.footer {
+  height: 1.306667rem;
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid #C8C8C8;
+}
+.footer .center-btn {
+  width: 1.306667rem;
+  height: 1.306667rem;
+  background: url("../images/footer-center-btn.png");
+  background-size: 100% 100%;
+  border: none;
+  position: absolute;
+  left: 50%;
+  margin-left: -0.653333rem;
+}
+.footer .ico-list {
+  width: 4.346667rem;
+  text-align: center;
+  padding-top: 0.186667rem;
+  position: absolute;
+  top: 0;
+}
+.footer .ico-list.left {
+  left: 0;
+}
+.footer .ico-list.right {
+  right: 0 !important;
+}
+.footer .ico-list .item {
+  width: 0.586667rem;
+  height: 0.986667rem;
+  font-size: 0.266667rem;
+  padding-top: 0.666667rem;
+  background: url("../images/foot-ico1.png") no-repeat top center;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  color: #999;
+  margin: 0 0.666667rem 0;
+}
+.footer .ico-list .item.ico2 {
+  background: url("../images/foot-ico2.png") no-repeat top center;
+}
+.footer .ico-list .item.ico3 {
+  background: url("../images/foot-ico3.png") no-repeat top center;
+}
+.footer .ico-list .item.ico4 {
+  background: url("../images/foot-ico4.png") no-repeat top center;
+}
+.footer .item.active {
+  color: #6AB721 !important;
+}
