@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+	<title></title>
+	<meta charset="utf-8" >
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/zepto.min.js"></script>
+</head>
+<body class="post-act">
+	<div class="header activity">
+		<div class="location-ico"></div>
+		<h1>发布活动</h1>
+		
+		<span class="pre active">预览</span>
+		<span class="post">发布</span>
+	</div>
+	<div class="input-section first">
+		<img src="images/ico-flap.png" >
+		<input placeholder="输入活动主题" />
+	</div>
+	<div class="input-section">
+		<textarea placeholder="输入活动描述，让更多的人参与活动..."></textarea>
+		<img class="postPhoto">
+		<img class="postVideo">
+	</div>
+	<div class="post-section-warp">
+		<div class="activity-info">
+			<img class="ico time" src="images/ico-time.png">
+			<div class="time-warp address">
+				开始时间
+			</div>
+			<span class="ftil-info manage-info right">
+				<span class="data">2016-03-23</span>
+				<span class="hour">09:00</span>
+			</span>
+			<div class="right-arrow"></div>
+		</div>
+		<div class="activity-info">
+			<img class="ico time" src="images/ico-time2.png">
+			<div class="time-warp address">
+				结束时间
+			</div>
+			<span class="ftil-info manage-info right">
+				<span class="data">2016-03-23</span>
+				<span class="hour">09:00</span>
+			</span>
+			<div class="right-arrow"></div>
+		</div>
+		<div class="activity-info">
+			<img class="ico address" src="images/ico-address.png">
+			<div class="time-warp address">
+				活动地点
+			</div>
+			<span class="ftil-info manage-info right">
+				<span class="data">选择或填写活动地点</span>
+			</span>
+			<div class="right-arrow"></div>
+		</div>
+	</div>
+
+	<div class="post-section-warp">
+		<div class="activity-info">
+			<div class="time-warp address">
+				报名截止时间
+			</div>
+			<span class="ftil-info manage-info right">
+				<span class="data">2016-03-23</span>
+				<span class="hour">09:00</span>
+			</span>
+			<div class="right-arrow"></div>
+		</div>
+		<div class="activity-info">
+			<div class="time-warp address">
+				招募人员
+			</div>
+			<div class="right-arrow"></div>
+		</div>
+		<div class="activity-info">
+			<div class="time-warp address">
+				活动耗材
+			</div>
+			<div class="right-arrow"></div>
+		</div>
+		<div class="activity-info">
+			<div class="time-warp address">
+				活动费用
+			</div>
+			<div class="right-arrow"></div>
+		</div>
+	</div>
+	<div class="section-set">
+		<h1>设置报名表</h1>
+		<div class="tag-warp">
+			<span class="tag active">手机号</span>
+			<span class="tag active">姓名</span>
+			<span class="tag active">介绍人</span>
+			<span class="tag">性别</span>
+			<span class="tag">年龄</span>
+			<span class="tag">地址</span>
+			<span class="tag">身份证</span>
+			<span class="tag custom" id="customBtn">自定义</span>
+
+		</div>
+	</div>
+	<div class="custom-tag-warp">
+		<div class="dialog">
+			<h1>添加自定义字段</h1>
+			<input type="text">
+			<div class="button-warp">
+				<span>取消</span>
+				<span id="closeBtn">确定</span>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$("#customBtn").click(function(){
+			$(".custom-tag-warp").show()
+		})
+		$("#closeBtn").click(function(){
+			$(".custom-tag-warp").hide()
+		})
+	</script>
+</body>
+</html>
