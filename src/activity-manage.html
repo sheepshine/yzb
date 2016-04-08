@@ -5,6 +5,7 @@
 	<meta charset="utf-8" >
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/zepto.min.js"></script>
 </head>
 <body class="mange-warp">
 	<div class="header activity">
@@ -33,7 +34,7 @@
 		<div class="right-arrow"></div>
 	</div>
 	<!-- 编辑修改 -->
-	<div class="mange-warp">
+	<div class="mange-warp inside" id="moreInfo">
 		<div class="activity-info manage">
 			<span class="ftil">
 			活动详情:
@@ -48,8 +49,8 @@
 			开始时间:
 			</span>
 			<span class="ftil-info manage-info">
-				<span class="data">2016-03-23</span>
-				<span class="hour">09:00</span>
+				<input type="date" class="data">
+				<input type="time">
 			</span>
 			<div class="right-arrow"></div>
 		</div>
@@ -58,8 +59,8 @@
 			结束时间:
 			</span>
 			<span class="ftil-info manage-info">
-				<span class="data">2016-03-23</span>
-				<span class="hour">09:00</span>
+				<input type="date" class="data">
+				<input type="time">
 			</span>
 			<div class="right-arrow"></div>
 		</div>
@@ -77,8 +78,8 @@
 			报名截止:
 			</span>
 			<span class="ftil-info manage-info">
-				<span class="data">2016-03-23</span>
-				<span class="hour">09:00</span>
+				<input type="date" class="data">
+				<input type="time">
 			</span>
 			<div class="right-arrow"></div>
 		</div>
@@ -126,5 +127,23 @@
 			 关闭活动
 		</div>
 	</div>
+	<script type="text/javascript">
+		$(".change-btn").click(function(){
+			if($(this).html()=="完成"){
+				$(this).html("修改")
+				console.log($("#moreInfo"))
+				$("#moreInfo").css("height","0 !important")
+				$(this).css({'background':'url("images/modify-btn.png") no-repeat center left',
+		'background-size': '0.533333rem 0.533333rem'})
+			}else{
+				$(this).html("完成")
+				console.log($("#moreInfo"))
+				$("#moreInfo").css("height","6.6rem !important")
+				$(this).css({'background':'url("images/change-btn.png") no-repeat center left',
+		'background-size': '0.533333rem 0.533333rem'})
+			}
+			
+		})
+	</script>
 </body>
 </html>

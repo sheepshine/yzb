@@ -446,6 +446,11 @@ body {
   background: #ECEDF1;
   padding-bottom: 1.333333rem;
 }
+.mange-warp.inside {
+  padding-bottom: 0;
+  height: 6.6rem;
+  overflow: hidden;
+}
 .manage-footer {
   height: 1.866667rem;
   width: 100%;
@@ -632,4 +637,8 @@ body {
 .custom-tag-warp .dialog .button-warp span:last-child {
   border-left: 1px solid #ccc;
   color: #6AB721;
+}
+input[type='date'],
+input[type='time'] {
+  border: none;
 }
